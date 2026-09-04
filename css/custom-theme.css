@@ -1,0 +1,178 @@
+/* Custom Theme Enhancements - Bright Lime Green (orange) */
+
+/* Add subtle shadow and glow effects to elements with the primary color */
+.primary-btn:hover,
+.genric-btn.primary:hover {
+    box-shadow: 0 0 20px rgba(175, 255, 84, 0.5);
+}
+
+/* Enhanced navigation hover effects */
+#nav-menu-container ul li a:hover {
+    text-shadow: 0 0 10px rgba(175, 255, 84, 0.3);
+}
+
+/* Card hover effects */
+.single-service:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Enhance buttons with gradient */
+.primary-btn,
+.genric-btn.primary {
+    background: linear-gradient(135deg, orange 0%, #eeb844 100%);
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover,
+.genric-btn.primary:hover {
+    background: linear-gradient(135deg, orange 0%, #dda834 100%);
+    transform: scale(1.05);
+}
+
+/* Add fresh look to sections */
+.section-gap {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fff0 100%);
+}
+
+
+/* Enhance footer with theme color accents */
+.footer-area {
+    border-top: 3px solid orange;
+    background-color: #ffffff !important;
+}
+
+/* Override section-gap for footer */
+footer.section-gap {
+    background: #ffffff !important;
+}
+
+/* Ensure all footer text is visible */
+.footer-area p,
+.footer-area li,
+.footer-area a,
+.footer-area h6,
+.footer-text {
+    color: #000000 !important;
+}
+
+.footer-area a:hover {
+    color: orange !important;
+}
+
+.footer-area .fa {
+    color: #000000 !important;
+}
+
+.footer-area .fa:hover {
+    color: orange !important;
+}
+
+/* Make icons pop */
+.lnr:hover,
+.fa:hover {
+    color: orange !important;
+    transition: color 0.3s ease;
+}
+
+/* Add subtle animation to service cards */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.single-service {
+    transition: all 0.3s ease;
+}
+
+.single-service:hover {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Enhance text readability on light backgrounds */
+body1 {
+    background: linear-gradient(120deg, #b3e0fc 30%, #fff9b2 50%, #b6f7a5 100%);
+    /* Darker blue (#b3e0fc), richer yellow (#fff9b2), deeper green (#b6f7a5) */
+}
+
+/* Add glow to active menu items */
+.menu-active a {
+    color: orange !important;
+    font-weight: 600;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, .btn {
+    transition: all 0.3s ease;
+}
+
+/* Banner overlay with theme color */
+.overlay-bg {
+    background: linear-gradient(135deg, rgba(175, 255, 84, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Add subtle border accents */
+.section-title h1::after {
+    background: linear-gradient(90deg, transparent 0%, orange 50%, transparent 100%);
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 15px auto;
+    width: 80%;
+}
+
+/* Enhanced call-to-action buttons */
+.banner-content .primary-btn {
+    box-shadow: 0 5px 20px rgba(175, 255, 84, 0.4);
+}
+
+/* Fresh look for input fields */
+input:focus, textarea:focus {
+    border-color: orange !important;
+    box-shadow: 0 0 10px rgba(175, 255, 84, 0.2);
+}
+
+/* Update WhatsApp button background to green */
+.whatsapp-btn {
+    background-color: orange;
+}
+
+/* Update calling button background to sky blue */
+.calling-btn {
+    background-color: #87CEEB;
+}
+
+/* Keep the banner artwork readable on narrow mobile screens. */
+.banner-area {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    .banner-area {
+        min-height: 220px;
+        background-size: auto 220px;
+    }
+
+    .about-content {
+        margin-top: 56px;
+        padding: 32px 0;
+    }
+
+    .about-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-area {
+        min-height: 200px;
+        background-size: auto 200px;
+    }
+
+    .about-content {
+        margin-top: 50px;
+        padding: 28px 16px;
+    }
+}

@@ -1,0 +1,455 @@
+/* Custom Animations for Siya Tours */
+
+/* Fade and Slide Up Animation */
+@keyframes fadeInUpCustom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade and Slide In from Left */
+@keyframes fadeInLeftCustom {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade and Slide In from Right */
+@keyframes fadeInRightCustom {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce In Animation */
+@keyframes bounceInCustom {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translateY(-50px);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Rotate In Animation */
+@keyframes rotateInCustom {
+    from {
+        opacity: 0;
+        transform: rotate(-15deg) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+/* Flip In Animation */
+@keyframes flipInCustom {
+    from {
+        opacity: 0;
+        transform: perspective(400px) rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(400px) rotateY(0);
+    }
+}
+
+/* Slide Down Animation */
+@keyframes slideDownCustom {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Zoom In Subtle */
+@keyframes zoomInSubtle {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulseCustom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Shake Animation */
+@keyframes shakeCustom {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Float Animation */
+@keyframes floatCustom {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Gradient Background Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+}
+
+.fade-up {
+    animation: fadeInUpCustom 0.8s ease forwards;
+}
+
+.fade-left {
+    animation: fadeInLeftCustom 0.8s ease forwards;
+}
+
+.fade-right {
+    animation: fadeInRightCustom 0.8s ease forwards;
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease forwards;
+}
+
+.bounce-in {
+    animation: bounceInCustom 1s ease forwards;
+}
+
+.rotate-in {
+    animation: rotateInCustom 0.8s ease forwards;
+}
+
+.flip-in {
+    animation: flipInCustom 0.8s ease forwards;
+}
+
+.slide-down {
+    animation: slideDownCustom 0.8s ease forwards;
+}
+
+.zoom-in-subtle {
+    animation: zoomInSubtle 0.8s ease forwards;
+}
+
+/* Delay Classes */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
+
+.delay-800 {
+    animation-delay: 0.8s;
+}
+
+/* Hover Animations */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-glow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgba(175, 255, 84, 0.6);
+}
+
+.hover-rotate {
+    transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+    transform: rotate(5deg);
+}
+
+.hover-pulse {
+    animation: pulseCustom 2s ease-in-out infinite;
+}
+
+.hover-float {
+    animation: floatCustom 3s ease-in-out infinite;
+}
+
+/* Button Animations */
+.animated-button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.animated-button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Card Animations */
+.animated-card {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.animated-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.animated-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #AFFF54, #4CAF50);
+    transition: width 0.3s ease;
+}
+
+.animated-card:hover::after {
+    width: 100%;
+}
+
+/* Image Animations */
+.animated-image {
+    transition: all 0.9s ease;
+    overflow: hidden;
+}
+
+.animated-image img {
+    transition: transform 0.4s ease;
+}
+
+.animated-image:hover img {
+    transform: scale(1.1) rotate(0deg);
+}
+
+/* Text Animations */
+.animated-text {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animated-text:hover {
+    transform: scale(1.1);
+    color: #AFFF54;
+}
+
+/* Gradient Background Animation */
+.gradient-animate {
+    background: linear-gradient(-45deg, #AFFF54, #4CAF50, #2196F3, #9C27B0);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+/* Loading Animation */
+.loading-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(175, 255, 84, 0.3);
+    border-top-color: #AFFF54;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Reveal Animation for Sections */
+.reveal-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-section.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger Animation for Lists */
+.stagger-item {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.stagger-item.animated {
+    animation: fadeInLeftCustom 0.6s ease forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Parallax Effect Helper */
+.parallax-element {
+    transition: transform 0.3s ease-out;
+}
+
+/* Responsive Animations - Disable on mobile for performance */
+@media (max-width: 768px) {
+    .hover-lift:hover,
+    .hover-scale:hover,
+    .hover-rotate:hover {
+        transform: none;
+    }
+    
+    .animated-image:hover img {
+        transform: none;
+    }
+    
+    /* Reduce animation complexity on mobile */
+    .fade-up,
+    .fade-left,
+    .fade-right,
+    .scale-in,
+    .bounce-in,
+    .rotate-in,
+    .flip-in,
+    .slide-down,
+    .zoom-in-subtle {
+        animation-duration: 0.4s;
+    }
+}
+
+/* Print Styles - Disable animations */
+@media print {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
