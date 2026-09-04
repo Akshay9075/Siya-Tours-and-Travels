@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Demo - Siya Tours</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #b3e0fc 0%, #fff9b2 60%, #b6f7a5 100%);
+            padding: 50px 0;
+        }
+        .demo-section {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .demo-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .animation-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .hover-demo {
+            background: #AFFF54;
+            color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .color-primary {
+            color: #AFFF54;
+        }
+        .section-header {
+            font-size: 1.8rem;
+            color: #444;
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #AFFF54;
+        }
+        .btn-demo {
+            background: linear-gradient(90deg, #AFFF54, #4CAF50);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .card-demo {
+            background: white;
+            border: 2px solid #eee;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .instruction {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="demo-title fade-up">🎨 Animation Showcase</h1>
+        <p class="text-center fade-up delay-100" style="font-size: 1.2rem;">Siya Tours & Travels - Interactive Animation Demo</p>
+
+        <div class="instruction fade-up delay-200">
+            <strong>👀 How to view:</strong> Scroll down slowly to see animations trigger! Hover over elements to see hover effects.
+        </div>
+
+        <!-- Entry Animations Section -->
+        <div class="demo-section">
+            <h2 class="section-header">📍 Entry Animations (Scroll-Triggered)</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="animation-box fade-up">
+                        <strong>Fade Up</strong><br>
+                        Slides up while fading in
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="animation-box fade-left">
+                        <strong>Fade Left</strong><br>
+                        Slides from left side
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="animation-box fade-right">
+                        <strong>Fade Right</strong><br>
+                        Slides from right side
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="animation-box slide-down">
+                        <strong>Slide Down</strong><br>
+                        Drops down from top
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="animation-box scale-in">
+                        <strong>Scale In</strong><br>
+                        Grows into view
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animation-box zoom-in-subtle">
+                        <strong>Zoom In</strong><br>
+                        Subtle zoom effect
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animation-box bounce-in">
+                        <strong>Bounce In</strong><br>
+                        Bouncy entrance
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="animation-box rotate-in">
+                        <strong>Rotate In</strong><br>
+                        Rotates while appearing
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animation-box flip-in">
+                        <strong>Flip In</strong><br>
+                        3D flip effect
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animation-box fade-up delay-300">
+                        <strong>With Delay</strong><br>
+                        300ms delay
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Staggered Animations -->
+        <div class="demo-section">
+            <h2 class="section-header">⏱️ Staggered Animations</h2>
+            <p>Multiple elements appearing in sequence:</p>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-demo zoom-in-subtle delay-100">
+                        <h4>Step 1</h4>
+                        <p>First element (100ms delay)</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-demo zoom-in-subtle delay-200">
+                        <h4>Step 2</h4>
+                        <p>Second element (200ms delay)</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-demo zoom-in-subtle delay-300">
+                        <h4>Step 3</h4>
+                        <p>Third element (300ms delay)</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-demo zoom-in-subtle delay-400">
+                        <h4>Step 4</h4>
+                        <p>Fourth element (400ms delay)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hover Effects Section -->
+        <div class="demo-section">
+            <h2 class="section-header">🖱️ Hover Effects</h2>
+            <p class="fade-up">Move your mouse over these elements:</p>
+            
+            <div class="text-center">
+                <div class="hover-demo hover-lift fade-up delay-100">
+                    <strong>Hover Lift</strong><br>
+                    Lifts up with shadow
+                </div>
+                <div class="hover-demo hover-scale fade-up delay-200">
+                    <strong>Hover Scale</strong><br>
+                    Grows slightly
+                </div>
+                <div class="hover-demo hover-glow fade-up delay-300">
+                    <strong>Hover Glow</strong><br>
+                    Adds glow effect
+                </div>
+                <div class="hover-demo hover-rotate fade-up delay-400">
+                    <strong>Hover Rotate</strong><br>
+                    Rotates slightly
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <div class="hover-demo hover-pulse" style="animation-delay: 0s;">
+                    <strong>Pulse Animation</strong><br>
+                    Continuous breathing
+                </div>
+                <div class="hover-demo hover-float" style="animation-delay: 0s;">
+                    <strong>Float Animation</strong><br>
+                    Gentle floating
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Animations -->
+        <div class="demo-section">
+            <h2 class="section-header">🔘 Button Animations</h2>
+            <div class="text-center">
+                <button class="btn-demo animated-button hover-lift fade-up">
+                    Hover for Ripple Effect
+                </button>
+                <button class="btn-demo animated-button hover-scale fade-up delay-100">
+                    Animated Button
+                </button>
+                <button class="btn-demo animated-button hover-glow fade-up delay-200">
+                    Call to Action
+                </button>
+            </div>
+        </div>
+
+        <!-- Card Animations -->
+        <div class="demo-section">
+            <h2 class="section-header">🎴 Card Animations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-demo animated-card fade-up">
+                        <h4>Service Card 1</h4>
+                        <p>Hover to see lift effect and underline animation</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-demo animated-card fade-up delay-100">
+                        <h4>Service Card 2</h4>
+                        <p>Smooth transitions with shadow</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-demo animated-card fade-up delay-200">
+                        <h4>Service Card 3</h4>
+                        <p>Professional hover effects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Animations -->
+        <div class="demo-section">
+            <h2 class="section-header">🖼️ Image Animations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="animated-image scale-in">
+                        <img src="img/home.png" class="img-fluid" alt="Demo" style="border-radius: 10px;">
+                        <p class="mt-2 text-center"><strong>Hover to zoom</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animated-image scale-in delay-100">
+                        <img src="img/2.jpeg" class="img-fluid" alt="Demo" style="border-radius: 10px;">
+                        <p class="mt-2 text-center"><strong>Hover to zoom</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animated-image scale-in delay-200">
+                        <img src="img/3.jpeg" class="img-fluid" alt="Demo" style="border-radius: 10px;">
+                        <p class="mt-2 text-center"><strong>Hover to zoom</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Animations -->
+        <div class="demo-section">
+            <h2 class="section-header">📝 Text Animations</h2>
+            <div class="text-center">
+                <h3 class="fade-up">
+                    <span class="animated-text">Hover</span>
+                    <span class="animated-text delay-100">over</span>
+                    <span class="animated-text delay-200">each</span>
+                    <span class="animated-text delay-300">word</span>
+                </h3>
+            </div>
+        </div>
+
+        <!-- Performance Info -->
+        <div class="demo-section fade-up">
+            <h2 class="section-header">⚡ Performance Features</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>✅ GPU-accelerated transforms</li>
+                        <li>✅ Intersection Observer API</li>
+                        <li>✅ Throttled scroll events</li>
+                        <li>✅ One-time animations (efficient)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>✅ Mobile optimized</li>
+                        <li>✅ Cross-browser compatible</li>
+                        <li>✅ Accessibility friendly</li>
+                        <li>✅ Lightweight (~50KB total)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-5 fade-up">
+            <a href="index.html" class="btn-demo animated-button">
+                ← Back to Home
+            </a>
+        </div>
+
+        <footer class="text-center mt-5 fade-up">
+            <p style="color: #666;">
+                <strong>Siya Tours & Travels</strong><br>
+                Animation System Implementation<br>
+                Scroll to top and refresh to see animations again!
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+
+
+
